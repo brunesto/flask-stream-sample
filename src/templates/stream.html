@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chat</title>
+</head>
+
+<body>
+  <h1>Chat</h1>
+  <form id="chat-form">
+    <label for="message">Message:</label>
+    <input type="text" id="message" name="message">
+    <button type="submit">Send</button>
+  </form>
+  <div id="chat-log"></div>
+  <script src="{{ url_for('static', filename='stream.js') }}">
+  </script>
+</body>
+
+</html>
